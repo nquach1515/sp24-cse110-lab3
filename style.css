@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+/* universal selector */
+* {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* class selector .classname */
+.nav-link {
+    color: red;
+}
+
+/* element selector */
+h1 {
+    color: hsl(195, 100%, 75%);
+}
+
+summary {
+    color: color(display-p3 0.6042 0.6056 0.4163 / 0.69);
+}
+
+#header-2 {
+    color: rgb(14, 89, 22)
+}
+
+/* id selector #idname */
+#meetingInfo {
+    color: #8D28DA
+}
+
+li {
+    color: color-mix(in srgb, pink 25%, brown 50%);
+}
+
+/* attribute selector */
+[id*="summary"] {
+    color: rgb(19, 155, 232)
+
+}
