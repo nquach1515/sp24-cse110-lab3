@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+/* universal selector */
+* {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+:root {
+    --main-text-color: color-mix(in srgb, pink 25%, brown 50%);
+}
+
+@media (mid-width: 100px) {
+    
+}
+
+/* class selector .classname */
+.nav-link {
+    color: red;
+    font-size: 0.85em;
+}
+
+/* element selector */
+h1 {
+    color: hsl(195, 100%, 75%);
+    text-decoration: underline;
+    display: block;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+summary {
+    color: color(display-p3 0.6042 0.6056 0.4163 / 0.69);
+}
+
+#header-2 {
+    color: rgb(14, 89, 22);
+    text-decoration: underline;
+}
+
+/* id selector #idname */
+#meetingInfo {
+    color: #8D28DA;
+    font-size: 1.2em
+}
+
+/* background */
+#work-form {
+    background-image: url(media/gradient-background.jpg);
+    background-repeat: round;
+}
+
+#aws-img {
+    max-width: 5000px;
+    min-width: 10px;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    border-style: dashed;
+    border-color: hsl(195, 100%, 75%);
+    border-width: 10px;
+    border-radius: 10px;
+    display: inline;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+#aws-img:hover {
+    transform: scale(1.2)
+}
+
+#fortnite-vid {
+    width: 80%;
+    margin: 40px 30px 40px 30px;
+    padding: 1%;
+    position: static;
+}
+
+#fornite-audio {
+    padding-bottom: 10%;
+    height: 100px;
+    width: 50%;
+    position: relative;
+}
+
+#form-button:active {
+    background-color: brown;
+    color: yellow;
+}
+
+
+/* variable */
+li {
+    color: var(--main-text-color, brown)
+}
+
+/* relative length units */
+footer {
+    font-size: 0.75em;
+    margin: auto;
+    max-width: 200px;
+}
+
+/* attribute selector */
+[id*="summary"] {
+    color: rgb(19, 155, 232)
+}
