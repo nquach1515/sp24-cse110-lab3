@@ -3,7 +3,6 @@
 /* universal selector */
 * {
     font-family: "Reddit Mono", monospace;
-    font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
 }
@@ -34,6 +33,10 @@ ol {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    li {
+        font-style: italic;
+    }
 }
 
 ul {
@@ -43,7 +46,7 @@ ul {
 }
 
 summary {
-    color: color(display-p3 0.6042 0.6056 0.4163 / 0.69);
+    color: color(0.6042 0.6056 0.4163 / 0.69);
 }
 
 #header-2 {
