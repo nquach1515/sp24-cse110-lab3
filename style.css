@@ -12,8 +12,10 @@
     --main-text-color: color-mix(in srgb, pink 25%, brown 50%);
 }
 
-@media (mid-width: 100px) {
-    
+@media (width < 100px) {
+    video {
+        display: none;
+    }
 }
 
 /* class selector .classname */
@@ -34,6 +36,10 @@ ol {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    li {
+        font-style: italic;
+    }
 }
 
 ul {
@@ -108,7 +114,7 @@ summary {
 
 
 /* variable */
-li {
+li, footer {
     color: var(--main-text-color, brown)
 }
 
@@ -117,6 +123,30 @@ footer {
     font-size: 0.75em;
     margin: auto;
     max-width: 200px;
+}
+
+fieldset button {
+    background-color: pink;
+}
+
+details > summary {
+    font-weight: bold
+}
+
+summary ~ p {
+    font-weight: bold;
+}
+
+label + input {
+    font-weight: bold
+}
+
+a.nav-link {
+    font-style: italic;
+}
+
+h1:has(+ nav) {
+    font-style: oblique;
 }
 
 /* attribute selector */
